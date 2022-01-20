@@ -1,12 +1,12 @@
 body {
-	margin : 0px; // 언제나 전체 body에는 margin값을 0으로 세팅해준다
+	margin : auto; // 언제나 전체 body에는 margin값을 0으로 세팅해준다
 	font-size : 18px;
 	color : #FFF;
-	height : 300vh;
+    width: 70%;
+	height : 200vh;
 }
 
 #wrap {
-	position : relative;
 	height : auto;
 	margin : auto; // 레이아웃을 싸고 있는 wrap의 margin을 auto로 주면 중앙정렬 효과
 	background-color : #F90;
@@ -15,23 +15,20 @@ body {
 #top {
 	//background-color : #333;
 	height : 150px;
-	position : relative;
 }
 
-#two-top {
-	background-color : #333;
-    height : 80px;
-	position : relative;
-	display:flex;
-	flex-direction: column;
-}
+	#two-top {
+		background-color : lightsteelblue;
+		height : 80px;
+		display:flex;
+		flex-direction: column;
+	}
 
 #left {
 	//background-color : #09C;
 	float : left;
-	height : 600px;
-	width : 15%;
-	position : relative;
+	width : 20%;
+	height : 200vh;
 	display: flex;
 	flex-direction: column;
 }
@@ -39,34 +36,51 @@ body {
 #main {
 	background-color : #3C0;
 	float : left;
-	height : 600px;
-	width : 70%;
-	position : relative;
+	width : 60%;
+	height : 200vh;
 }
+
+	#one-main {
+		background-color : #380;
+		width : 100%;
+		height : 60vh;
+	}
+
+	#two-main {
+		background-color : #D51;
+		width : 100%;
+		height : 140vh;
+	}
+		
+		#tow-main-wrap {
+			text-align : center;
+			height : 30%;	
+		}
+
+			#tow-main-wrap div{
+				text-align : initial;
+				display : inline-block;
+				background-color : green;
+				border : 1px solid black;
+				width : 48%;
+				height : 96%;
+				margin-top: 10px;
+			}
 
 #sub {
 	background-color : #110;
 	float : left;
-	height : 600px;
-	width : 15%;
-	position : relative;
+	width : 20%;
+	height : 200vh;
 }
 
 #bottom {
 	background-color : #C0F;
 	height : 90px;
-	position : relative;
 	clear : both; // 상단의 흐름을 한번 끊어주기 위해 clear를 해준다
 	// float 속성을 적용하면 그 이후에 오는 다른 요소들까지 똑같은 속성이
 	// 전달되어 float 속성을 더이상 사용하지 않고 그전으로 되돌리고 싶다면 사용
 	float : left; // 새로운 흐름을 지정해줘야 깨지지 않는다
-}
-
-div#login-box {
-    display : flex;
-	flex : 1;
-	height : 70px;
-	background-color: lightgrey;
 }
 
 div#id-pw {
@@ -78,10 +92,22 @@ input#id, input#pw {
 	width : 130px;
 }
 
+div#login-box {
+    display : flex;
+	flex : 1;
+	height : 70px;
+	background-color: lightgrey;
+}
+
 div#login-main-box-4 {
-	display:flex; flex:4
+	display:flex; flex:15;
 }
 
 input#login-button {
 	height: 50px;
+}
+
+ul#top-bar-item li{
+	list-style-type : none;
+	margin-left : 20px;
 }
