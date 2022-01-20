@@ -1,0 +1,4 @@
+<?php
+	//mysql
+	//select -> result
+?>
